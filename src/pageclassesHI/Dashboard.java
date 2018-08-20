@@ -28,7 +28,6 @@ public class Dashboard {
 	@FindBy(xpath="//div[contains(@class,'daterangepicker dropdown-menu ltr opensleft')]//button[contains(@type,'button')][contains(text(),'Cancel')]")
 	WebElement canceltop5;
 	
-	
 	public void clickpatientreg()
 	{
 		patientreg.click();
