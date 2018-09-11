@@ -1,9 +1,13 @@
 package pageclassesHI;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Dashboard {
+	
+	WebDriver driver;
 	
 	@FindBy(id="patientReg")
 	WebElement patientreg; 
@@ -28,6 +32,12 @@ public class Dashboard {
 	@FindBy(xpath="//div[contains(@class,'daterangepicker dropdown-menu ltr opensleft')]//button[contains(@type,'button')][contains(text(),'Cancel')]")
 	WebElement canceltop5;
 	
+	public Dashboard(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+
 	public void clickpatientreg()
 	{
 		patientreg.click();
@@ -62,4 +72,10 @@ public class Dashboard {
 	{
 		canceltop5.click();
 	}
+	
+	//Example for passing the values through send keys
+/*	public void clickCancelTop(String dest)
+	{
+		applytop5.sendKeys(dest);
+	}*/
 }

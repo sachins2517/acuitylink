@@ -12,7 +12,9 @@ import org.junit.rules.Timeout;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HIsignup {
   private WebDriver driver;
@@ -43,7 +45,8 @@ public class HIsignup {
     String lname = ExcelUtils.getCellData(1, 6);
     String email = ExcelUtils.getCellData(1, 7);
     String phno = ExcelUtils.getCellData(1, 8);
-       
+    WebDriverWait wait = new WebDriverWait(driver, 15);  
+
     driver.findElement(By.xpath("//button[@id='']")).click();
     //driver.findElement(By.id("hiName")).click();
     //driver.findElement(By.id("hiName")).clear();

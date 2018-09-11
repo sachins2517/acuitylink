@@ -11,6 +11,10 @@ public class Requests_HI {
 	@FindBy(xpath="//div[@class='col-lg-4 col-md-6 col-sm-12 col-xs-12 pad0']//input[@placeholder='Search']")
 	WebElement search;
 	
+	@FindBy()
+	WebElement s;
+	
+	
 	public Requests_HI(WebDriver driver)
 	{
 		this.driver = driver;

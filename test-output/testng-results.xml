@@ -2,30 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21609" started-at="2018-08-20T06:54:00Z" finished-at="2018-08-20T06:54:22Z">
+  <suite name="Default suite" duration-ms="15443" started-at="2018-08-30T07:25:55Z" finished-at="2018-08-30T07:26:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21609" started-at="2018-08-20T06:54:00Z" finished-at="2018-08-20T06:54:22Z">
-      <class name="demo1.Just">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:demo1.Just@6d4b1c02]" name="setUp" is-config="true" duration-ms="4134" started-at="2018-08-20T06:54:00Z" finished-at="2018-08-20T06:54:05Z">
+    <test name="Default test" duration-ms="15443" started-at="2018-08-30T07:25:55Z" finished-at="2018-08-30T07:26:10Z">
+      <class name="test.java.Testing_page">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.java.Testing_page@6093dd95]" name="beforeClass" is-config="true" duration-ms="10192" started-at="2018-08-30T07:25:55Z" finished-at="2018-08-30T07:26:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testSignupHI()[pri:0, instance:demo1.Just@6d4b1c02]" name="testSignupHI" duration-ms="17450" started-at="2018-08-20T06:54:05Z" finished-at="2018-08-20T06:54:22Z">
-          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
-            <message>
-              <![CDATA[Element should have been "select" but was "span"
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:82b:f9d2:97f9:f141%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_101'
-Driver info: driver.version: unknown]]>
-            </message>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="test()[pri:0, instance:test.java.Testing_page@6093dd95]" name="test" duration-ms="5217" started-at="2018-08-30T07:26:05Z" finished-at="2018-08-30T07:26:10Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "span"
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:82b:f9d2:97f9:f141%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_101'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
-at demo1.Just.testSignupHI(Just.java:59)
+              <![CDATA[java.lang.NullPointerException
+at test.java.Testing_page.test(Testing_page.java:43)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,11 +43,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSignupHI -->
-      </class> <!-- demo1.Just -->
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.java.Testing_page@6093dd95]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-08-30T07:26:10Z" finished-at="2018-08-30T07:26:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.Testing_page -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
